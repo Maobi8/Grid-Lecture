@@ -2,93 +2,64 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
+}  
 
 .grid{
-    background-color: #333;
-    height: 100vh;
-}
-.grid h1{
-    text-align: center;
-    color: white;
-    padding-top: 30px;
-    cursor: pointer;
+
+    background-color:rgb(228, 245, 134) ;
+    
 }
 .all{
-    display: flex;
-    padding-top: 50px;
-  
-
-
-}
-.side1{
-    width: 50%;
-    background-color: rgb(233, 241, 183);
-    height: 70vh;
-    padding: 10px;
-}
-
-.side2{
-    border-radius: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    
-}
-.img1{
-    width: 50%;
-    
-}
-.img2{
-    width: 50%;
-    
-}
-.side2 img{
-    border-radius: 100px;
-    height: 30px;
-    width: 30px;
-    margin-top: 10px;
-
-}
-.side2 p, .text p{
-    font-size: 10px;
-}
-.text{
-    padding-top: 200px;
-}
-.side3{
-    width: 50%;
-    background-color: blue;
-    height: 70vh; 
-}
-
-
-.side3{
     display: grid;
-    grid-template-columns: auto auto auto ;
-    grid-template-rows: auto auto auto;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
+    grid-template-columns: 55% 45%;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+
+
+.testimonial-heading{
+    margin-top: 10rem;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+.customers{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+    gap: 20px;
+}
+.customersImg{
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+p{
+    font-size: 15px;
+}
+.side3{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 7px;
+    overflow: hidden;
     
 }
 
-.side3 img{
-    width: 50%;
+.menu{
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in-out;
 }
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+.menu:hover{
+    transform: rotate(-180deg)scale(1.0);
 }
-
-
-
-
 .contact{
     background-color: #333;
     height: 100vh;
-    
+
 }
 .form-container{
     text-align: center;
@@ -101,8 +72,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-   
-    
+
+
 
 }
 .main form{
@@ -115,9 +86,9 @@
     background-image: url(../images/contact-bg.jpg);
     background-size: cover;
     margin-bottom: 60px;
-   
-    
-    
+
+
+
 }
  .main form h1{
     color: white;
@@ -167,11 +138,11 @@
  }
  textarea::-webkit-scrollbar{
     width: 1em;
-    
+
  }
  textarea::-webkit-scrollbar-thumb{
     background-color: yellow;
-    
+
 
  }
  main form #button{
@@ -197,7 +168,7 @@ button {
     margin-left: 250px;
     margin-top: 20px;
     padding: 5px;
-    
+
 }
 button a{
     text-decoration: none;
@@ -208,4 +179,3 @@ button a{
 button :hover{
     color: blue;
 }
-
